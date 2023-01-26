@@ -39,6 +39,10 @@ spec:
           ui:options:
             allowedKinds: 
               - Group
+        repo:
+          title: Name of repo
+          type: string
+          description: Name or repository github
     - title: Choose a location  
       required:
         - repoUrl
@@ -74,7 +78,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: 'This is {{ parameters.component_id }}'
-        repoUrl: '{{ parameters.repoUrl }}'
+        repoUrl: github.com?repo=${{ parameters.repo }}-gitops&owner=diego-rodrigues87
 
     - id: register
       name: Register
