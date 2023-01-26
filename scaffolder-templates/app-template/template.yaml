@@ -85,7 +85,3 @@ spec:
         allowedHosts: ['github.com']
         description: This is ${{ parameters.application_id }}
         repoUrl: github.com?repo=${{ parameters.application_id }}-gitops&owner=diego-rodrigues87
-        repoVisibility: public
-        sourcePath: ./app-gitops
-        deleteBranchOnMerge: true
-        access: diego-rodrigues87/${{ parameters.owner }}
